@@ -1,7 +1,6 @@
 {
-	"includes": [
-		"../context/def.json",
-		"../drop/def.json"
+	"import": [
+		"../context/def.json"
 	],
 	"sources": [
 		"src/observer.h",

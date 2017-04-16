@@ -33,6 +33,8 @@ namespace om636
     void basic_subject<T, U>::on_swap( context_type & lhs, context_type & rhs )
     {
         std::for_each( observers().begin(), observers().end(), [&](observer_type * i) {
+            
+            ASSERT( i );
             i->on_swap( lhs, rhs );
         } );
     }
